@@ -25,12 +25,14 @@ export const filtersLogic = (
 
   //@filter by order (sortBy)
   if (filters.order && filteredGames) {
-    filteredGames.sort(function (a: any, b: any): any {
+    filteredGames = filteredGames.sort(function (a: any, b: any): any {
       if (filters.order === "alphabetical") {
         return a.title < b.title ? -1 : 1;
       }
       if (filters.order === "release-date") {
-        return new Date(a.releaseDate) < new Date(b.releaseDate) ? -1 : 1;
+        const dateA: any = new Date(a.releaseDate).getTime();
+        const dateB: any = new Date(b.releaseDate).getTime();
+        return dateA > dateB ? 1 : -1;
       }
       //How to sort by relevance - based on what ?
     });
