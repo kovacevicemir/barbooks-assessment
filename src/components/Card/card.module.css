@@ -1,0 +1,19 @@
+.cardContainer {
+  width: 420px;
+  background-color: #e2d9d9;
+  margin: 5px;
+  padding: 10px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.cardContainer:hover {
+  cursor: pointer;
+}
+
+.subContainer {
+  display: flex;
+}

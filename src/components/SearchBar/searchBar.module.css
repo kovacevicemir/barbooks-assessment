@@ -1,0 +1,9 @@
+.searchBarContainer {
+  padding: 20px;
+}
+
+.searchBarInput {
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 600px;
+}

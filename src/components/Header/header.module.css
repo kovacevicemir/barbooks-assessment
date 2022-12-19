@@ -1,0 +1,12 @@
+.headerContainer {
+  padding: 20px;
+}
+.title {
+  font-size: xx-large;
+  color: antiquewhite;
+  margin: 15px;
+}
+.subTitle {
+  font-size: x-large;
+  color: blueviolet;
+}
